@@ -1,0 +1,7 @@
+# Routes
+GET  /      controllers.ApplicationController.index
+GET  /add   controllers.ApplicationController.addPreferenceIndex
+GET  /health   controllers.ApplicationController.health
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
